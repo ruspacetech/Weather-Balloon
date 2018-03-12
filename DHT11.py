@@ -10,6 +10,8 @@ import Adafriut_DHT
 
 i = 500
 
+file=open("DHT_Data.txt","w")
+
 tempArray = []
 humidityArray = []
 
@@ -17,4 +19,6 @@ while i > 0:
     humidity, temperature = Adafriut_DHT.read_retry(11,4)
     humidityArray.append(humidity)
     tempArray.append(temperature)
+    file.write(str(humidity))
+    file.write(str(temperature))
     i=i-1
