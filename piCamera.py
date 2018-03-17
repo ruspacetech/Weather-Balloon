@@ -7,6 +7,7 @@ camera = PiCamera()
 # The recording time is 3 hours
 
 i= 36
+<<<<<<< HEAD
 print("Pi camera initialized \n")
 while i > 0:
 
@@ -20,3 +21,22 @@ while i > 0:
     
     print('Video Number ' +str(i)+' completed \n')
 
+=======
+print("Pi camera initialized")
+if i == 36:
+    camera.start_preivew()
+    sleep(5)
+    camera.start_recording()
+    sleep(300)
+    camera.stop_recording()
+    camera.stop_preview()
+    i=i-1
+    print("Pi camera test run completed and logged")
+elif i > 0:
+    camera.start_preview()
+    camera.start_recording()
+    sleep(300)
+    camera.stop_recording()
+    camera.stop_preview()
+    i=i-1
+>>>>>>> a1aee89930f986b5c071ab1123635b2a219e54f2

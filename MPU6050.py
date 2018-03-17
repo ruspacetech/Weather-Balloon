@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/usr/bin/python
 
 import smbus
@@ -98,3 +99,26 @@ while i>0:
 	i= i-1
 	if i==10799:
 		print("MPU6050 is operating normally")
+=======
+#Programming for the MPU6050 on the raspberry pi
+
+#This code utilizes the mpu6050-raspberrypi module in order to simplify and streamline the code
+
+#Source website is https://pypi.python.org/pypi/mpu6050-raspberrypi/
+
+#Downloads from website needed
+from mpu6050 import mpu6050
+accelArray = []
+gyroArray = []
+
+i = 500
+sensor = mpu6050(0x68)
+print("MPU6050 initialized")
+while i > 0:
+    temp_accel = sensor.get_accel_data()
+    temp_gyro = sensor.get_gyro_data()
+    accelArray.append(temp_accel)
+    gyroArray.append(temp_gyro)
+    i = i - 1
+print("MPU6050 disabled")
+>>>>>>> a1aee89930f986b5c071ab1123635b2a219e54f2
