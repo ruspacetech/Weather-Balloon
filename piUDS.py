@@ -1,6 +1,7 @@
+#!/usr/bin/python
 import RPi.GPIO as GPIO
 import time
-<<<<<<< HEAD
+
 GPIO.setmode(GPIO.BCM)
 
 TRIG = 5
@@ -97,4 +98,3 @@ with myFile:
    writer = csv.writer(myFile)
    writer.writerows(dists)
 
->>>>>>> a1aee89930f986b5c071ab1123635b2a219e54f2
