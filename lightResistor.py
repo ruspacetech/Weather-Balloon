@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import RPi.GPIO as GPIO, time, os      
 from time import sleep 
 DEBUG = 1
