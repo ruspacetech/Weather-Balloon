@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import sys
 import Adafruit_DHT
 from time import sleep
@@ -40,4 +40,4 @@ while i > 0:
     file.write(str(humidity))
     file.write(str(temperature))
     i=i-1
->>>>>>> a1aee89930f986b5c071ab1123635b2a219e54f2
+
