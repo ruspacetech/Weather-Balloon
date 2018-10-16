@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 #!/usr/bin/python
 
 import smbus
@@ -121,4 +121,4 @@ while i > 0:
     gyroArray.append(temp_gyro)
     i = i - 1
 print("MPU6050 disabled")
->>>>>>> a1aee89930f986b5c071ab1123635b2a219e54f2
+
