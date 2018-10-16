@@ -1,3 +1,4 @@
+#!/usr/bin/python
 from picamera import PiCamera
 from time import sleep
 
@@ -39,4 +40,4 @@ elif i > 0:
     camera.stop_recording()
     camera.stop_preview()
     i=i-1
->>>>>>> a1aee89930f986b5c071ab1123635b2a219e54f2
+
